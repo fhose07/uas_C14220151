@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahDaftar">
+
+    <EditText
+        android:id="@+id/etBerat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Berat Badan"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/etTekanan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tekanan Darah"
+        app:layout_constraintTop_toBottomOf="@+id/etBerat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+    <EditText
+        android:id="@+id/etCatatan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Catatan"
+        app:layout_constraintTop_toBottomOf="@+id/etTekanan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/btnTambah"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tambah"
+        app:layout_constraintTop_toBottomOf="@+id/etCatatan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
